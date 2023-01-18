@@ -80,10 +80,9 @@ input[type="text"]:active {
     align-items: center;
 }
 
-.list-items .list:nth-child(odd) {
-    background: #f9f9f9;
+.list-items .list-dec:nth-child(odd) {
+    background: #e6e4e4;
     color: black;
-    /* margin-bottom: 4rem; */
 }
 
 .list-items {
@@ -91,7 +90,6 @@ input[type="text"]:active {
 }
 
 .list {
-    /* background-color: #eb473c; */
     width: 100%;
     display: flex;
     cursor: pointer;
@@ -124,4 +122,24 @@ input[type="text"]:active {
 
 .bg {
     background-color: #888888 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        overflow-y: auto;
+    }
+
+    .container::-webkit-scrollbar {
+        width: 0.4rem;
+    }
+
+    .checked,
+    .cross {
+        width: 10%;
+    }
+
+    .to-do-item {
+        width: 80%;
+        padding: 1rem;
+    }
 }

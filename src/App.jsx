@@ -62,7 +62,7 @@ function App() {
 
       <div className="list-items">
         {list.map(item =>
-          <div key={item.id}>
+          <div key={item.id} className="list-dec">
             <ListItem item={item} setTodo={setTodo} onDelete={onDelete} />
           </div>
         )}
