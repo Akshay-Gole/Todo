@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 70vh;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.container::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgb(235, 231, 231);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #f79696 0%, #f83737 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+
+.todo-section {
+    width: 100%;
+    background-color: #eb473c;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-to-do {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.add-to-do input[type="text"] {
+    line-height: 3rem;
+    padding-left: 1rem;
+    width: 80%;
+    font-size: 2rem;
+    border: none;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active {
+    outline: none;
+    border: none;
+}
+
+.btn {
+    height: 5rem;
+    width: 20%;
+    font-size: 2rem;
+    background: rgb(226, 223, 223);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-items .list:nth-child(odd) {
+    background: #f9f9f9;
+    color: black;
+    /* margin-bottom: 4rem; */
+}
+
+.list-items {
+    color: black;
+}
+
+.list {
+    /* background-color: #eb473c; */
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.checked,
+.cross {
+    width: 5%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.to-do-item {
+    width: 90%;
+    padding: 1rem;
+}
+
+.list-items .cross:hover {
+    background-color: #f44336;
+    color: white;
+    padding: none !important;
+}
+
+.list-items .list .to-do-item-completed {
+    text-decoration: line-through;
+    width: 90%;
+    padding: 1rem;
+
+}
+
+.bg {
+    background-color: #888888 !important;
+}
