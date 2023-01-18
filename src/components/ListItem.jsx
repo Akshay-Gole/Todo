@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { TiTick } from 'react-icons/ti'
 import { RxCross2 } from 'react-icons/rx'
 
